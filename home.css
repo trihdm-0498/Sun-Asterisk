@@ -1,0 +1,153 @@
+body {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Header */
+header {
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 10px 180px 0px 180px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.sun-logo {
+    max-height: 40px;
+}
+
+/* Navbar */
+.menu-object {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 120px;
+}
+
+.menu-object li {
+    font-weight: 400;
+    margin-right: 40px;
+    padding: 30px 0px;
+    position: relative;
+}
+
+.menu-object li:last-child {
+    margin-right: 0;
+}
+
+.menu-object a {
+    color: black;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.menu-object a.active {
+    color: #c01111;
+}
+
+.menu-object .object-home {
+    color: #c01111;
+}
+
+.menu-object a:hover,
+.menu-object a:focus,
+.menu-object a:active {
+    color: #c01111;
+}
+
+.menu-object a.active:before,
+.menu-object a:hover:before,
+.menu-object a:focus:before {
+    background-color: #c01111;
+    border-radius: 5px;
+    content: '';
+    height: 6px;
+    left: 50%;
+    position: absolute;
+    top: -30px;
+    transform: translateX(-50%);
+    width: 60%;
+    z-index: 2;
+}
+
+.menu-object a:not(.active):hover:before,
+.menu-object a:not(.active):focus:before {
+    background-color: #c01111;
+    border-radius: 5px;
+    content: '';
+    height: 6px;
+    left: 50%;
+    position: absolute;
+    top: -30px;
+    transform: translateX(-50%);
+    width: 60%;
+    z-index: 2;
+}
+
+/* lang-switcher */
+.lang-switcher ul {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lang-switcher li {
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0px 6px;
+}
+
+.lang-switcher li:hover {
+    color: #c01111;
+}
+
+.lang-switcher .lang-vi-default {
+    border: 1px solid #c01111;
+    color: #c01111;
+    font-weight: 600;
+    padding: 1px 13px;
+}
+
+/* Intro */
+.banner {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+video {
+    height: auto;
+    left: 50%;
+    max-width: 102%;
+    max-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 40px);
+}
