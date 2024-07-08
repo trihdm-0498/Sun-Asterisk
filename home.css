@@ -151,3 +151,1687 @@ video {
     transform: translate(-50%, -50%);
     width: calc(100% + 40px);
 }
+
+/* Main */
+main {
+    padding: 20px 180px;
+    margin-bottom: 80px;
+}
+
+/* Section lĩnh vực kinh doanh */
+.elementor-heading {
+    font-size: 40px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.elementor-intro__content {
+    align-items: center;
+    border: 6px solid #f9f9f9;
+    border-radius: 16px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.elementor-intro__description {
+    font-size: 16px;
+    padding: 40px 0px 40px 70px;
+    width: 85%;
+    z-index: 1;
+}
+
+.elementor-intro__image {
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.elementor-intro__image img {
+    height: auto;
+    max-width: 90%;
+}
+
+/* Section tuyển dụng phòng ban */
+.elementor-business-content {
+    margin-top: 100px;
+}
+
+.elementor-business-content ul {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.elementor-business__item--normal,
+.elementor-business__item--red {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.elementor-business__item--red {
+    background-color: #c01111;
+    border: 1px solid #c01111;
+    color: #f9f9f9;
+}
+
+.elementor-business__description {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.elementor-business__sub-title {
+    margin-bottom: 30px;
+}
+
+.elementor-business__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 24px;
+}
+
+.elementor-business-btn--bg-black,
+.elementor-business-btn--bg-white {
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 80px;
+    padding: 0px 20px;
+    text-decoration: none;
+    width: auto;
+}
+
+.elementor-business-btn--bg-black {
+    background-color: #54595f;
+    color: white;
+}
+
+.elementor-business-btn--bg-white {
+    background-color: white;
+    color: #c01111;
+}
+
+.elementor-business-btn--bg-white:hover {
+    background-color: #2b3441;
+    color: white;
+}
+
+.elementor-business-btn--bg-black:hover {
+    background-color: #c01111;
+}
+
+/* Section dự án */
+.elementor-project-contain {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+}
+
+.elementor-project-counter {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.elementor-project-counter ul {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.elementor-project-counter ul li {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.elementor-project-counter__number {
+    align-items: start;
+    color: #c01111;
+    display: flex;
+    font-size: 92px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.elementor-project-counter__number .elementor-project-counter__label {
+    color: #c01111;
+    font-size: 38px;
+    font-weight: 700;
+    padding-left: 10px;
+    top: -5px;
+}
+
+.elementor-project-counter__title {
+    font-size: 24px;
+}
+
+.elementor-project-slider {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+}
+
+.elementor-project-slider-item {
+    border-radius: 8px;
+    height: fit-content;
+    margin-bottom: 0px;
+    overflow: hidden;
+    position: relative;
+    width: fit-content;
+}
+
+.elementor-project-slider-item img {
+    display: block;
+    height: 90%;
+    opacity: 0.1;
+    width: 100%;
+}
+
+.elementor-project-slider-content {
+    border-radius: 8px;
+    color: black;
+    left: 50%;
+    padding: 20px 0px;
+    position: absolute;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.elementor-project-slider__description {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.elementor-project-slider__sub-title {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.elementor-project-slider__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.elementor-project-slider-btn-text {
+    color: #c01111;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.elementor-project-slider-btn-text__icon {
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.elementor-project-slider-button {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    padding-right: 100px;
+    width: 100%;
+}
+
+.elementor-project-slider-btn__next,
+.elementor-project-slider-btn__prev {
+    background-color: rgba(148, 155, 164, .1);
+    border-radius: 50%;
+    color: #949ba4;
+    cursor: pointer;
+    font-size: 35px;
+    height: 40px;
+    line-height: 1.15;
+    text-align: center;
+    width: 40px;
+}
+
+.elementor-project-counter-btn {
+    background-color: #54595f;
+    border-radius: 4px;
+    color: white;
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 80px;
+    margin: 80px 100px 0px 60px;
+    max-width: 100%;
+    order: 10;
+    padding: 0px 95px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.elementor-project-counter-btn__icon {
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 50%;
+    height: 24px;
+    line-height: 22px;
+    margin-left: 10px;
+    text-align: center;
+    width: 24px;
+}
+
+.elementor-project-counter-btn:hover {
+    background-color: #c01111;
+}
+
+.elementor-project-counter-btn:hover .elementor-project-counter-btn__icon {
+    background-color: #e77373;
+}
+
+/* Section cơ hội nghề nghiệp */
+.elementor-career {
+    background-color: rgba(192, 17, 17, .9);
+    border-radius: 16px;
+    height: 100%;
+    margin-top: 100px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.elementor-career::before {
+    background-image: url('./img/career-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.elementor-career-content {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.elementor-career-content-button {
+    margin-top: 20px;
+}
+
+.elementor-career-content-button-title {
+    background-color: white;
+    border-radius: 8px;
+    color: #c01111;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    text-decoration: none;
+    width: 406px;
+}
+
+.elementor-career-content-button-title:hover,
+.elementor-career-content-button-title:hover .elementor-career-content-button-title__icon {
+    background-color: #2b3441;
+    color: #f9f9f9;
+}
+
+.elementor-career-content-button-title:hover .elementor-career-content-button-title__icon {
+    background-color: #949ba4;
+}
+
+.elementor-career-content-button-title__icon {
+    background-color: rgba(192, 17, 17, .1);
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 12px;
+    height: 24px;
+    line-height: 22px;
+    margin-left: 12px;
+    text-align: center;
+    width: 24px;
+}
+
+.elementor-career-content__description {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.elementor-career-content__sub-description {
+    font-size: 24px;
+    padding: 0 5%;
+    text-align: center;
+}
+
+.elementor-career-content__sub-title {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 60px;
+}
+
+.elementor-career-content__title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
+
+/* Section môi trường làm việc */
+.elementor-environmental {
+    margin-top: 100px;
+}
+
+.elementor-environmental-banner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.elementor-environmental-banner__img {
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.elementor-environmental-button-title {
+    background-color: #2b3441;
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    height: 80px;
+    line-height: 80px;
+    margin-top: -120px;
+    padding: 0px 170px;
+    text-decoration: none;
+}
+
+.elementor-environmental-button-title:hover {
+    background-color: #c01111;
+}
+
+.elementor-environmental-button-title__icon {
+    margin-left: 5px;
+}
+
+.elementor-environmental-contain {
+    align-items: start;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.elementor-environmental-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.elementor-environmental-content ul li {
+    align-items: flex-start;
+    display: flex;
+}
+
+.elementor-environmental-content__icon {
+    border: 6px solid #f9f9f9;
+    border-radius: 50%;
+    display: block;
+    height: 40px;
+    margin-right: 27px;
+    width: 40px;
+}
+
+.elementor-environmental-content__title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.elementor-environmental .elementor-heading {
+    margin-bottom: 0px;
+}
+
+.elementor-icon-check {
+    background-color: #c01111;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 40px;
+    left: -3px;
+    mask-image: url(./img/icon-check.svg);
+    position: relative;
+    top: -3px;
+    width: 50px;
+}
+
+/* Section văn hóa sự kiện */
+.elementor-news-heading {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.elementor-news-btn-next,
+.elementor-news-btn-prev {
+    align-items: center;
+    background-color: rgba(148, 155, 164, .1);
+    border-radius: 50%;
+    color: #949ba4;
+    cursor: pointer;
+    display: flex;
+    font-size: 35px;
+    height: 40px;
+    justify-content: center;
+    line-height: 1.15;
+    text-align: center;
+    width: 40px;
+}
+
+.elementor-news-heading__slick-btn {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+.elementor-news-slick-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.elementor-news-slick-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
+    max-width: calc((100% - 40px) / 3);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.elementor-news-slick-item img {
+    border-radius: 8px;
+    height: auto;
+    width: 100%;
+}
+
+.elementor-news-title {
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    height: 75px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.elementor-news-preview {
+    color: #666;
+    font-size: 14px;
+    height: 75px;
+    margin-bottom: 20px;
+}
+
+.elementor-news-btn-text {
+    color: #c01111;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.elementor-news-btn-text__icon {
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.elementor-news-button {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.elementor-new-button-title {
+    background-color: #2b3441;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    height: 80px;
+    line-height: 80px;
+    padding: 0px 20px;
+    text-decoration: none;
+    width: 366px;
+}
+
+.elementor-new-button-title:hover {
+    background-color: #c01111;
+    transition: all .3s;
+}
+
+.elementor-new-button__icon {
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 50%;
+    display: inline-block;
+    height: 24px;
+    line-height: 22px;
+    margin-left: 12px;
+    position: relative;
+    text-align: center;
+    top: -1px;
+    width: 24px;
+}
+
+/* Footer */
+.footer {
+    background-color: #f7f7f7;
+}
+
+.footer-1 {
+    display: flex;
+    padding: 0px 180px;
+    padding-top: 60px;
+}
+
+.footer-1-column {
+    box-sizing: border-box;
+    flex: 1 1 25%;
+    padding: 10px;
+}
+
+.footer-1-column a {
+    box-shadow: none;
+    color: #949ba4;
+    text-decoration: none;
+}
+
+.footer-1-column ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.footer-1-column ul li {
+    margin-bottom: 15px;
+}
+
+.footer__logo {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+    max-height: 51px;
+    max-width: 100%;
+}
+
+.footer-heading {
+    color: #4d5969;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 0;
+}
+
+.footer-2 {
+    border-bottom: 1px solid #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 180px;
+    padding-top: 30px;
+}
+
+.footer-2-column {
+    box-sizing: border-box;
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-2-column:nth-child(3) {
+    flex: 2;
+}
+
+.footer-heading {
+    color: #4d5969;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.footer-2-column ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.footer-2-column ul li {
+    color: #949ba4;
+    margin-bottom: 15px;
+}
+
+.footer-3 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 180px;
+}
+
+.footer-3-column {
+    display: flex;
+    flex: 1 1 50%;
+}
+
+.footer-3-column-1 {
+    flex: 1;
+}
+
+.footer-3-column-1 ul {
+    color: #949ba4;
+    list-style-type: none;
+}
+
+.footer-3-column-1 ul li {
+    margin-bottom: 15px;
+}
+
+.footer-3-column-2 {
+    flex: 1;
+}
+
+.footer-3-logo {
+    flex: 0 0 auto;
+    width: auto;
+}
+
+.bear-footer {
+    height: auto;
+    width: 100%;
+}
+
+/* Button Join us */
+.join-us-button {
+    background-color: #c01111;
+    border-radius: 50%;
+    bottom: 120px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    right: 40px;
+    text-align: center;
+    text-decoration: none;
+    width: 60px;
+    z-index: 9999;
+}
+
+.join-us-button:hover {
+    background-color: #a00;
+    transition: background-color 0.3s;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        padding: 10px 0px;
+    }
+
+    .menu-object {
+        display: none;
+    }
+
+    .head-logo {
+        position: relative;
+        left: 10px; 
+    }
+
+    .lang-switcher {
+        position: relative;
+        right: 10px;
+    }
+
+    .banner {
+        height: auto;
+        padding-top: 0;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+        max-width: none;
+        position: relative;
+        top: 0;
+        transform: none;
+        left: 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    /* Sections */
+    .elementor-heading {
+        font-size: 28px;
+    }
+
+    .elementor-intro__description {
+        font-size: 14px;
+    }
+
+    .elementor-business__title {
+        font-size: 24px;
+    }
+
+    .elementor-project-slider__title {
+        font-size: 18px;
+    }
+
+    .elementor-career-content__title {
+        font-size: 32px;
+    }
+
+    .elementor-environmental-content__title {
+        font-size: 18px;
+    }
+
+    .elementor-news-title {
+        font-size: 14px;
+    }
+    
+    /* Footer */
+    .footer-1,
+    .footer-2,
+    .footer-3 {
+        padding: 0 20px;
+    }
+
+    .footer-1-column,
+    .footer-2-column {
+        padding: 5px; 
+    }
+
+    .footer-1,
+    .footer-2 {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .footer-1-column,
+    .footer-2-column {
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .elementor-intro__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        align-items: center;
+        position: relative;
+        border: 6px solid #f9f9f9;
+        border-radius: 16px;
+    }
+
+    .elementor-intro__description {
+        padding: 20px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .elementor-intro__image {
+        position: static;
+        transform: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .elementor-intro__image img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .elementor-business-content ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        list-style: none;
+    }
+
+    .elementor-business__item--red,
+    .elementor-business__item--normal {
+        margin-bottom: 20px;
+    }
+
+    .elementor-business__item--red:last-child,
+    .elementor-business__item--normal:last-child {
+        margin-bottom: 0;
+    }
+
+    .elementor-project {
+        padding: 20px;
+    }
+
+    .elementor-project-contain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .elementor-project-counter ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .elementor-project-counter li {
+        flex: 1;
+        margin: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .elementor-project-counter__number {
+        font-size: 50px;
+    }
+
+    .elementor-project-counter__label {
+        font-size: 16px;
+    }
+
+    .elementor-project-counter__title {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .elementor-project-counter-btn {
+        font-size: 14px;
+        padding: 0px;
+        margin: 20px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .elementor-project-slider {
+        width: 100%;
+    }
+
+    .elementor-project-slider-item {
+        margin-bottom: 20px;
+    }
+
+    .elementor-project-slider-content {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .elementor-project-slider__sub-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .elementor-project-slider__title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .elementor-project-slider__description {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .elementor-project-slider-btn-text {
+        font-size: 14px;
+    }
+
+    .elementor-project-slider-button {
+        padding: 0px;
+    }
+
+    .elementor-career-content__description {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .elementor-career-content__sub-description {
+        font-size: 14px;
+    }
+
+    .elementor-environmental-contain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .elementor-environmental-content__title {
+        font-size: 15px;
+    }
+
+    .elementor-environmental-button-title {
+        padding: 0px 120px;
+    }
+
+    .elementor-news-slick-track {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .elementor-news-slick-item {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 15px 0px;
+    }
+
+    .menu-object {
+        display: none;
+    }
+
+    .head-logo {
+        position: relative;
+        left: 10px; 
+    }
+
+    .lang-switcher {
+        position: relative;
+        right: 10px;
+    }
+
+    .banner {
+        height: auto;
+        padding-top: 0;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+        max-width: none;
+        position: relative;
+        top: 0;
+        transform: none;
+        left: 0;
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    /* Sections */
+    .elementor-heading {
+        font-size: 32px;
+    }
+
+    .elementor-intro__description {
+        font-size: 16px;
+    }
+
+    .elementor-business__title {
+        font-size: 28px;
+    }
+
+    .elementor-project-slider__title {
+        font-size: 22px;
+    }
+
+    .elementor-career-content__title {
+        font-size: 36px;
+    }
+
+    .elementor-environmental-content__title {
+        font-size: 20px;
+    }
+
+    .elementor-news-title {
+        font-size: 16px;
+    }
+    
+    /* Footer */
+    .footer-1,
+    .footer-2,
+    .footer-3 {
+        padding: 0 30px;
+    }
+
+    .footer-1-column,
+    .footer-2-column {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .elementor-intro__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        align-items: center;
+        position: relative;
+        border: 6px solid #f9f9f9;
+        border-radius: 16px;
+    }
+
+    .elementor-intro__description {
+        padding: 30px;
+    }
+
+    .elementor-intro__image {
+        position: static;
+        transform: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .elementor-intro__image img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .elementor-business-content ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        list-style: none;
+    }
+
+    .elementor-business__item--red,
+    .elementor-business__item--normal {
+        margin-bottom: 20px;
+    }
+
+    .elementor-business__item--red:last-child,
+    .elementor-business__item--normal:last-child {
+        margin-bottom: 0;
+    }
+
+    .elementor-project {
+        padding: 30px;
+    }
+
+    .elementor-project-contain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .elementor-project-counter ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .elementor-project-counter li {
+        flex: 1;
+        margin: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .elementor-project-counter__number {
+        font-size: 50px;
+    }
+
+    .elementor-project-counter__label {
+        font-size: 16px;
+    }
+
+    .elementor-project-counter__title {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .elementor-project-counter-btn {
+        font-size: 14px;
+        padding: 0px;
+        margin: 20px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .elementor-project-slider {
+        width: 100%;
+    }
+
+    .elementor-project-slider-item {
+        margin-bottom: 20px;
+    }
+
+    .elementor-project-slider-content {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .elementor-project-slider__sub-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .elementor-project-slider__title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .elementor-project-slider__description {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .elementor-project-slider-btn-text {
+        font-size: 16px;
+    }
+
+    .elementor-project-slider-button {
+        padding: 0px;
+    }
+
+    .elementor-career-content__description {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .elementor-environmental-button-title {
+        padding: 0 150px;
+    }
+
+    .elementor-news-slick-track {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .elementor-news-slick-item {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .elementor-environmental-contain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .elementor-environmental-content__title {
+        font-size: 15px;
+    }
+
+    .elementor-environmental-button-title {
+        padding: 0px 120px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+    .elementor-environmental-contain {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .elementor-business-content ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        width: 100%;
+    }
+
+    .elementor-project-contain {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        width: 100%;
+    }
+
+    .elementor-project-counter ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        width: 100%;
+    }
+
+    .footer-1 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer-1-column {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .footer-2 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer-2-column {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .footer-3 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer-3-column {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .elementor-intro__content {
+        align-items: center;
+        border: 6px solid #f9f9f9;
+        border-radius: 16px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .elementor-intro__description {
+        font-size: 16px;
+        padding: 40px 0px 40px 70px;
+        width: 85%;
+        z-index: 1;
+    }
+    
+    .elementor-intro__image img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .elementor-news-slick-track {
+        flex-direction: row;
+    }
+
+    .elementor-news-slick-item {
+        height: 100%;
+        max-width: calc((100% - 40px) / 3);
+        padding: 20px;
+    }
+
+    .elementor-news-title {
+        max-height: 60px;
+        overflow: hidden;
+    }
+
+    .elementor-news-preview {
+        max-height: 80px;
+        overflow: hidden;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 20px 40px;
+    }
+
+    .menu-object {
+        display: flex;
+        padding-left: 10px;
+        font-size: 13px;
+    }
+
+    .menu-object li {
+        margin-right: 20px;
+    }
+
+    .sun-logo {
+        max-height: 40px;
+    }
+
+    .lang-switcher {
+        display: block;
+    }
+
+    main {
+        padding: 40px;
+    }
+
+    /* Sections */
+    .elementor-heading {
+        font-size: 48px;
+    }
+
+    .elementor-intro__description {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .elementor-intro__image {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        width: 40%;
+    }
+
+    .elementor-intro__image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .elementor-business__item--red,
+    .elementor-business__item--normal {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .elementor-project {
+        padding: 40px;
+    }
+
+    .elementor-project-counter ul {
+        display: flex;
+    }
+
+    .elementor-project-counter li {
+        flex-basis: calc(33.33% - 10px);
+    }
+
+    .elementor-project-counter__number {
+        font-size: 50px;
+    }
+
+    .elementor-project-counter__label {
+        font-size: 20px;
+    }
+
+    .elementor-project-counter__title {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .elementor-project-counter-btn {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .elementor-project-slider {
+        width: 100%;
+    }
+
+    .elementor-project-slider-item {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .elementor-project-slider-content {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .elementor-project-slider__sub-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .elementor-project-slider__title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .elementor-project-slider__description {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .elementor-project-slider-btn-text {
+        font-size: 18px;
+    }
+
+    .elementor-career {
+        margin-top: 80px;
+    }
+
+    .elementor-career-content__title {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+
+    .elementor-career-content__sub-description {
+        font-size: 24px;
+    }
+
+    .elementor-career-content__description {
+        font-size: 32px;
+    }
+
+    .elementor-environmental-content__title {
+        font-size: 24px;
+    }
+
+    .elementor-news-heading__slick-btn {
+        display: flex;
+        gap: 10px;
+    }
+
+    .elementor-news-slick-track {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .elementor-news-slick-item {
+        flex-basis: calc(33.33% - 20px);
+    }
+
+    .elementor-news-title {
+        font-size: 14px;
+        max-height: 100%;
+    }
+
+    .elementor-news-preview {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .join-us-button {
+        bottom: 40px;
+        right: 40px;
+    }
+
+    .footer-1,
+    .footer-2,
+    .footer-3 {
+        padding: 0 20px;
+    }
+
+    .footer-1-column,
+    .footer-2-column {
+        padding: 10px;
+    }
+
+    .footer-1,
+    .footer-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .footer-1-column,
+    .footer-2-column {
+        box-sizing: border-box;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .footer-heading {
+        font-size: 20px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+    header {
+        align-items: center;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        height: auto;
+        justify-content: space-between;
+        overflow: hidden;
+        padding: 10px 180px 0px 180px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    
+    .sun-logo {
+        max-height: 40px;
+    }
+    
+    /* Navbar */
+    .menu-object {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-left: 120px;
+    }
+    
+    .menu-object li {
+        font-size: 16px;
+        font-weight: 400;
+        margin-right: 40px;
+        padding: 30px 0px;
+        position: relative;
+    }
+    
+    .menu-object li:last-child {
+        margin-right: 0;
+    }
+    
+    .menu-object a {
+        color: black;
+        position: relative;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        z-index: 1;
+    }
+    
+    .menu-object a.active {
+        color: #c01111;
+    }
+    
+    .menu-object .object-home {
+        color: #c01111;
+    }
+    
+    .menu-object a:hover,
+    .menu-object a:focus,
+    .menu-object a:active {
+        color: #c01111;
+    }
+    
+    .menu-object a.active:before,
+    .menu-object a:hover:before,
+    .menu-object a:focus:before {
+        background-color: #c01111;
+        border-radius: 5px;
+        content: '';
+        height: 6px;
+        left: 50%;
+        position: absolute;
+        top: -30px;
+        transform: translateX(-50%);
+        width: 60%;
+        z-index: 2;
+    }
+    
+    .menu-object a:not(.active):hover:before,
+    .menu-object a:not(.active):focus:before {
+        background-color: #c01111;
+        border-radius: 5px;
+        content: '';
+        height: 6px;
+        left: 50%;
+        position: absolute;
+        top: -30px;
+        transform: translateX(-50%);
+        width: 60%;
+        z-index: 2;
+    }
+    
+    /* lang-switcher */
+    .lang-switcher ul {
+        align-items: center;
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .lang-switcher li {
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 0px 6px;
+    }
+    
+    .lang-switcher li:hover {
+        color: #c01111;
+    }
+    
+    .lang-switcher .lang-vi-default {
+        border: 1px solid #c01111;
+        color: #c01111;
+        font-weight: 600;
+        padding: 1px 13px;
+    }
+}
