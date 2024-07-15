@@ -1,457 +1,79 @@
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px){
-    body {
-        font-size: 12px;
-    }
-
-    header {
-        padding: 10px 0px;
-    }
-
-    .menu-object {
-        display: none;
-    }
-
-    .head-logo {
-        position: relative;
-        left: 10px; 
-    }
-
-    .lang-switcher {
-        position: relative;
-        right: 10px;
-    }
-
-    .banner {
-        height: auto;
-        padding-top: 0;
-    }
-
-    video {
-        width: 100%;
-        height: auto;
-        max-width: none;
-        position: relative;
-        top: 0;
-        transform: none;
-        left: 0;
-    }
-
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px){
     main {
-        padding: 20px;
+        padding: 0 15px;
     }
 
-    .elementor-heading {
-        font-size: 28px;
-    }
-
-    .elementor-intro__description {
-        font-size: 14px;
-    }
-
-    .elementor-business__title {
-        font-size: 24px;
-    }
-
-    .elementor-project-slider__title {
-        font-size: 18px;
-    }
-
-    .elementor-career-content__title {
-        font-size: 32px;
-    }
-
-    .elementor-environmental-content__title {
-        font-size: 18px;
-    }
-
-    .elementor-news-title {
-        font-size: 14px;
-    }
-    
-    .footer-1,
-    .footer-2,
-    .footer-3 {
-        padding: 0 20px;
-    }
-
-    .footer-1-column,
-    .footer-2-column {
-        padding: 5px; 
-    }
-
-    .footer-1,
-    .footer-2 {
-        display: flex;
-        flex-direction: column;
-        padding: 0 10px;
-    }
-
-    .footer-1-column,
-    .footer-2-column {
+    .elementor-intro__content{
+        background-color: #fff;
         box-sizing: border-box;
-        padding: 10px;
-        width: 100%;
     }
 
-    .elementor-intro__content {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-        align-items: center;
-        position: relative;
-        border: 6px solid #f9f9f9;
-        border-radius: 16px;
+    .elementor-intro__design {
+        width: 30px;
+        left: -30px;
     }
 
-    .elementor-intro__description {
-        padding: 20px;
-        width: 100%;
-        z-index: 1;
+    .elementor-intro__description{
+        padding: 25px 0 25px 25px;
+        flex: 2;
     }
 
-    .elementor-intro__image {
-        position: static;
-        transform: none;
-        width: 100%;
-        text-align: center;
+    .elementor-intro .container {
+        margin-right: 0;
+        margin-left: 0;
+        max-width: 100%;
     }
 
-    .elementor-intro__image img {
-        max-width: 90%;
+    .elementor-intro-contain {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .img-fluid {
         height: auto;
+        max-width: 100%;
+        position: absolute;
+        right: 60px;
+        top: -170px;
     }
 
-    .elementor-business-content ul {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        list-style: none;
+    .elementor-business .container {
+        margin: 0;
+        max-width: 100%;
     }
 
-    .elementor-business__item--red,
-    .elementor-business__item--normal {
-        margin-bottom: 20px;
+    .elementor-business .container .row {
+        width: 100%;
     }
 
-    .elementor-business__item--red:last-child,
-    .elementor-business__item--normal:last-child {
+    .elementor-project .container {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .elementor-project .elementor-heading {
         margin-bottom: 0;
     }
 
-    .elementor-project {
-        padding: 20px;
+    .elementor-project .col-md-3 {
+        flex: 0 0 10%;
+        max-width: 10%;
     }
 
-    .elementor-project-contain {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .elementor-project .col-md-5 {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
-    .elementor-project-counter ul {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .elementor-project-counter li {
-        flex: 1;
-        margin: 0 10px;
-        box-sizing: border-box;
-    }
-
-    .elementor-project-counter__number {
-        font-size: 50px;
-    }
-
-    .elementor-project-counter__label {
+    .elementor-career-content__sub-title {
         font-size: 16px;
-    }
-
-    .elementor-project-counter__title {
-        font-size: 14px;
-        margin-top: 5px;
-    }
-
-    .elementor-project-counter-btn {
-        font-size: 14px;
-        padding: 0px;
-        margin: 20px 0px 0px 0px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .elementor-project-slider {
-        width: 100%;
-    }
-
-    .elementor-project-slider-item {
-        margin-bottom: 20px;
-    }
-
-    .elementor-project-slider-content {
-        padding: 10px;
         text-align: center;
-    }
-
-    .elementor-project-slider__sub-title {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    .elementor-project-slider__title {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    .elementor-project-slider__description {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-
-    .elementor-project-slider-btn-text {
-        font-size: 14px;
-    }
-
-    .elementor-project-slider-button {
-        padding: 0px;
-    }
-
-    .elementor-career-content__description {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .elementor-career-content__sub-description {
-        font-size: 14px;
-    }
-
-    .elementor-environmental-contain {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .elementor-environmental-content__title {
-        font-size: 15px;
-    }
-
-    .elementor-environmental-button-title {
-        padding: 0px 120px;
-    }
-
-    .elementor-news-slick-track {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .elementor-news-slick-item {
-        max-width: 100%;
-        padding: 10px;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px){
-    body {
-        font-size: 14px;
-    }
-
-    header {
-        padding: 15px 0px;
-    }
-
-    .menu-object {
-        display: none;
-    }
-
-    .head-logo {
-        position: relative;
-        left: 10px; 
-    }
-
-    .lang-switcher {
-        position: relative;
-        right: 10px;
-    }
-
-    .banner {
-        height: auto;
-        padding-top: 0;
-    }
-
-    video {
-        width: 100%;
-        height: auto;
-        max-width: none;
-        position: relative;
-        top: 0;
-        transform: none;
-        left: 0;
-    }
-
-    main {
-        padding: 30px;
-    }
-
-    .elementor-heading {
-        font-size: 32px;
-    }
-
-    .elementor-intro__description {
-        font-size: 16px;
-    }
-
-    .elementor-business__title {
-        font-size: 28px;
-    }
-
-    .elementor-project-slider__title {
-        font-size: 22px;
     }
 
     .elementor-career-content__title {
         font-size: 36px;
-    }
-
-    .elementor-environmental-content__title {
-        font-size: 20px;
-    }
-
-    .elementor-news-title {
-        font-size: 16px;
-    }
-    
-    .footer-1,
-    .footer-2,
-    .footer-3 {
-        padding: 0 30px;
-    }
-
-    .footer-1-column,
-    .footer-2-column {
-        padding: 10px;
-        width: 100%;
-    }
-
-    .elementor-intro__content {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-        align-items: center;
-        position: relative;
-        border: 6px solid #f9f9f9;
-        border-radius: 16px;
-    }
-
-    .elementor-intro__description {
-        padding: 30px;
-    }
-
-    .elementor-intro__image {
-        position: static;
-        transform: none;
-        width: 100%;
         text-align: center;
-    }
-
-    .elementor-intro__image img {
-        max-width: 90%;
-        height: auto;
-    }
-
-    .elementor-business-content ul {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        list-style: none;
-    }
-
-    .elementor-business__item--red,
-    .elementor-business__item--normal {
-        margin-bottom: 20px;
-    }
-
-    .elementor-business__item--red:last-child,
-    .elementor-business__item--normal:last-child {
-        margin-bottom: 0;
-    }
-
-    .elementor-project {
-        padding: 30px;
-    }
-
-    .elementor-project-contain {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .elementor-project-counter ul {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .elementor-project-counter li {
-        flex: 1;
-        margin: 0 10px;
-        box-sizing: border-box;
-    }
-
-    .elementor-project-counter__number {
-        font-size: 50px;
-    }
-
-    .elementor-project-counter__label {
-        font-size: 16px;
-    }
-
-    .elementor-project-counter__title {
-        font-size: 14px;
-        margin-top: 5px;
-    }
-
-    .elementor-project-counter-btn {
-        font-size: 14px;
-        padding: 0px;
-        margin: 20px 0px 0px 0px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .elementor-project-slider {
-        width: 100%;
-    }
-
-    .elementor-project-slider-item {
-        margin-bottom: 20px;
-    }
-
-    .elementor-project-slider-content {
-        padding: 15px;
-        text-align: center;
-    }
-
-    .elementor-project-slider__sub-title {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-
-    .elementor-project-slider__title {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-
-    .elementor-project-slider__description {
-        font-size: 16px;
-        margin-bottom: 15px;
-    }
-
-    .elementor-project-slider-btn-text {
-        font-size: 16px;
-    }
-
-    .elementor-project-slider-button {
-        padding: 0px;
     }
 
     .elementor-career-content__description {
@@ -459,67 +81,47 @@
         text-align: center;
     }
 
-    .elementor-environmental-button-title {
-        padding: 0 150px;
+    .elementor-career-content__sub-description {
+        font-size: 16px;
+        text-align: center;
     }
 
-    .elementor-news-slick-track {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .elementor-news-slick-item {
+    .elementor-environmental .container {
+        margin: 0;
         max-width: 100%;
-        padding: 15px;
     }
 
     .elementor-environmental-contain {
-        display: flex;
-        flex-direction: column;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
     }
 
-    .elementor-environmental-content__title {
-        font-size: 15px;
+    .elementor-environmental-banner {
+        flex: 0 0 50%;
+        max-width: 50%;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .elementor-environmental-content {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
     .elementor-environmental-button-title {
-        padding: 0px 120px;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px){
-    .elementor-environmental-contain {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .elementor-business-content ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-        width: 100%;
-    }
-
-    .elementor-project-contain {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-        width: 100%;
-    }
-
-    .elementor-project-counter ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-        width: 100%;
+        position: absolute;
+        bottom: -85px;
+        left: -360px;
+        text-wrap: nowrap;
+        padding: 0 100px;
     }
 
     .footer-1 {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        padding: 60px 0px 0px;
     }
 
     .footer-1-column {
@@ -531,6 +133,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        padding: 30px 0px 0px;
     }
 
     .footer-2-column {
@@ -542,6 +145,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        padding: 10px 10px;
     }
 
     .footer-3-column {
@@ -549,269 +153,85 @@
         margin: 10px;
     }
 
-    .elementor-intro__content {
-        align-items: center;
-        border: 6px solid #f9f9f9;
-        border-radius: 16px;
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    .elementor-intro__description {
-        font-size: 16px;
-        padding: 40px 0px 40px 70px;
-        width: 85%;
-        z-index: 1;
-    }
-    
-    .elementor-intro__image img {
-        height: auto;
-        max-width: 100%;
-    }
-
-    .elementor-news-slick-track {
-        flex-direction: row;
-    }
-
     .elementor-news-slick-item {
-        height: 100%;
-        max-width: calc((100% - 40px) / 3);
+        height: auto;
         padding: 20px;
     }
 
-    .elementor-news-title {
-        max-height: 60px;
-        overflow: hidden;
+    .elementor-news-preview {
+        margin-bottom: 50px;
     }
 
-    .elementor-news-preview {
-        max-height: 80px;
-        overflow: hidden;
+    .elementor-business .small-cicrle::before {
+        display: none;
+    }
+
+    .join-us-button {
+        right: 60px;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 993px){
     body {
-        font-size: 16px;
-    }
-
-    header {
-        padding: 20px 40px;
-    }
-
-    .menu-object {
-        display: flex;
-        padding-left: 10px;
-        font-size: 13px;
-    }
-
-    .menu-object li {
-        margin-right: 20px;
-    }
-
-    .sun-logo {
-        max-height: 40px;
-    }
-
-    .lang-switcher {
-        display: block;
-    }
-
-    main {
-        padding: 40px;
-    }
-
-    .elementor-heading {
-        font-size: 48px;
-    }
-
-    .elementor-intro__description {
-        width: 100%;
-        z-index: 1;
-    }
-
-    .elementor-intro__image {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        width: 40%;
-    }
-
-    .elementor-intro__image img {
-        width: 100%;
-        height: auto;
-    }
-
-    .elementor-business__item--red,
-    .elementor-business__item--normal {
-        flex-basis: calc(50% - 10px);
-    }
-
-    .elementor-project {
-        padding: 40px;
-    }
-
-    .elementor-project-counter ul {
-        display: flex;
-    }
-
-    .elementor-project-counter li {
-        flex-basis: calc(33.33% - 10px);
-    }
-
-    .elementor-project-counter__number {
-        font-size: 50px;
-    }
-
-    .elementor-project-counter__label {
-        font-size: 20px;
-    }
-
-    .elementor-project-counter__title {
-        font-size: 18px;
-        margin-top: 10px;
-    }
-
-    .elementor-project-counter-btn {
-        font-size: 18px;
-        padding: 10px 20px;
-    }
-
-    .elementor-project-slider {
-        width: 100%;
-    }
-
-    .elementor-project-slider-item {
-        flex-basis: calc(50% - 20px);
-    }
-
-    .elementor-project-slider-content {
-        padding: 20px;
-        text-align: left;
-    }
-
-    .elementor-project-slider__sub-title {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .elementor-project-slider__title {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    .elementor-project-slider__description {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    .elementor-project-slider-btn-text {
-        font-size: 18px;
-    }
-
-    .elementor-career {
-        margin-top: 80px;
-    }
-
-    .elementor-career-content__title {
-        font-size: 48px;
-        margin-bottom: 30px;
-    }
-
-    .elementor-career-content__sub-description {
-        font-size: 24px;
-    }
-
-    .elementor-career-content__description {
-        font-size: 32px;
-    }
-
-    .elementor-environmental-content__title {
-        font-size: 24px;
-    }
-
-    .elementor-news-heading__slick-btn {
-        display: flex;
-        gap: 10px;
-    }
-
-    .elementor-news-slick-track {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    .elementor-news-slick-item {
-        flex-basis: calc(33.33% - 20px);
-    }
-
-    .elementor-news-title {
-        font-size: 14px;
-        max-height: 100%;
-    }
-
-    .elementor-news-preview {
-        font-size: 14px;
-        margin-bottom: 20px;
-    }
-
-    .join-us-button {
-        bottom: 40px;
-        right: 40px;
-    }
-
-    .footer-1,
-    .footer-2,
-    .footer-3 {
-        padding: 0 20px;
-    }
-
-    .footer-1-column,
-    .footer-2-column {
-        padding: 10px;
-    }
-
-    .footer-1,
-    .footer-2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 20px;
-    }
-
-    .footer-1-column,
-    .footer-2-column {
         box-sizing: border-box;
-        padding: 20px;
-        width: 100%;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.8;
+        margin: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+        padding: 0;
     }
-
-    .footer-heading {
-        font-size: 20px;
+    
+    *, *:before, *:after {
+        box-sizing: inherit;
     }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px){
+    
+    /* Header */
     header {
-        align-items: center;
         background-color: white;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        display: flex;
         height: auto;
-        justify-content: space-between;
         overflow: hidden;
-        padding: 10px 180px 0px 180px;
+        padding: 10px 0 !important;
         position: sticky;
         top: 0;
         width: 100%;
         z-index: 10;
     }
     
+    header .bg-light {
+        background-color: white !important;
+    }
+    
     .sun-logo {
         max-height: 40px;
+    }
+    
+    /* Navbar */
+    
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 180px;
+    }
+    
+    .navbar-brand {
+        flex: 1;
+    }
+    
+    .navbar-toggler {
+        margin-left: auto;
+    }
+    
+    .collapse.navbar-collapse {
+        flex: 2;
+        justify-content: flex-end;
     }
     
     .menu-object {
@@ -820,13 +240,13 @@
         margin: 0;
         padding: 0;
         padding-left: 120px;
+        margin-right: 30px;
     }
     
     .menu-object li {
-        font-size: 16px;
         font-weight: 400;
-        margin-right: 40px;
-        padding: 30px 0px;
+        margin-right: 20px;
+        padding: 15px 0px;
         position: relative;
     }
     
@@ -835,21 +255,16 @@
     }
     
     .menu-object a {
-        color: black;
+        color: black !important;
         position: relative;
         text-decoration: none;
         transition: color 0.3s ease;
         z-index: 1;
+        white-space: nowrap;
+        display: inline-block;
     }
     
-    .menu-object a.active {
-        color: #c01111;
-    }
-    
-    .menu-object .object-home {
-        color: #c01111;
-    }
-    
+    .menu-object a.active,
     .menu-object a:hover,
     .menu-object a:focus,
     .menu-object a:active {
@@ -871,8 +286,21 @@
         z-index: 2;
     }
     
-    .menu-object a:not(.active):hover:before,
-    .menu-object a:not(.active):focus:before {
+    .menu-object .nav-item:first-child .nav-link {
+        color: #c01111 !important;
+    }
+    
+    .menu-object .nav-item:first-child .nav-link:hover,
+    .menu-object .nav-item:first-child .nav-link.active {
+        color: #c01111 !important;
+    }
+    
+    .menu-object .nav-item:first-child .nav-link.active:before,
+    .menu-object .nav-item:first-child .nav-link:hover:before {
+        background-color: #c01111 !important;
+    }
+    
+    .menu-object .nav-item:first-child .nav-link::before {
         background-color: #c01111;
         border-radius: 5px;
         content: '';
@@ -883,6 +311,17 @@
         transform: translateX(-50%);
         width: 60%;
         z-index: 2;
+    }
+    
+    #nav-link-active {
+        position: relative;
+    }
+    
+    /* lang-switcher */
+    .lang-switcher{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
     }
     
     .lang-switcher ul {
@@ -903,10 +342,1221 @@
         color: #c01111;
     }
     
-    .lang-switcher .lang-vi-default {
+    .lang-switcher .lang-default {
         border: 1px solid #c01111;
         color: #c01111;
         font-weight: 600;
         padding: 1px 13px;
     }
+
+    .lang-normal a {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .lang-normal a:hover {
+        text-decoration: none;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    
+    .dropdown input[type=checkbox] {
+        display: none;
+    }
+    
+    .dropdown input[type=checkbox]:checked ~ .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown input[type=checkbox]:checked + .dropbtn::before {
+        content: "\274C"; /* Unicode for the X icon */
+    }
+    
+    .dropdown .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 16px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .dropdown .dropbtn::before {
+        content: "\2795"; /* Unicode for the plus icon */
+        margin-right: 8px;
+    }
+    
+    /* Intro */
+    .banner {
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    
+    video {
+        height: auto;
+        left: 50%;
+        max-width: 102%;
+        max-height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% + 40px);
+    }
+    
+    /* Main */
+    main {
+        padding: 20px 180px;
+        margin-bottom: 80px;
+    }
+    
+    /* Section lĩnh vực kinh doanh */
+    .elementor-heading {
+        font-size: 40px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: start;
+        font-weight: 700;
+        position: relative;
+    }
+    
+    .elementor-intro {
+        width: 100% !important;
+    }
+    
+    .elementor-intro-contain {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+    
+    .elementor-intro__design {
+        position: absolute;
+        left: -74px;
+        height: 70%;
+        width: 80px;
+        border: 6px solid #f9f9f9;
+        border-right: none;
+        border-radius: 16px 0px 0px 16px;
+    }
+    
+    .elementor-intro__content {
+        align-items: center;
+        border: 6px solid #f9f9f9 !important;
+        border-radius: 16px;
+        display: flex;
+        gap: 10px;
+        position: relative;
+        flex: 1;
+    }
+    
+    .elementor-intro__description {
+        font-size: 16px;
+        padding: 40px 40px 40px 70px;
+        flex: 0 0 48%;
+        z-index: 1;
+    }
+    
+    .elementor-intro__image {
+        position: absolute !important;
+        right: -90px;
+        top: 50% !important;
+        transform: translateY(-50%);
+        z-index: 0;
+    }
+    
+    .elementor-intro__image img {
+        height: auto;
+        max-width: 100%;
+    }
+    
+    /* Section tuyển dụng phòng ban */
+    .elementor-business-content {
+        margin-top: 50px;
+    }
+    
+    .elementor-business {
+        position: relative;
+    }
+    
+    .large-cicrle::after {
+        content: '';
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+        background-color: #fff7f7;
+        position: absolute;
+        right: -250px;
+        bottom: -85px;
+    }
+    
+    .elementor-business .container .col-md-6 .large-cicrle::before{
+        content: '';
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+        background-color: #d82329;
+        position: absolute;
+        right: 50px;
+        top: 0;
+        transform: translateY(-50%);
+    }
+    
+    .small-cicrle::before{
+        content: '';
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: #c01111;
+        position: absolute;
+        right: -83px;
+        bottom: 166px;
+        transform: translateY(-50%);
+    }
+    
+    .elementor-business-content ul {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        list-style-type: none;
+        padding: 0px;
+    }
+    
+    .elementor-business__item--normal,
+    .elementor-business__item--red {
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px;
+        height: 100%;
+    }
+    
+    .elementor-business__item--red {
+        background-color: #c01111;
+        border: 1px solid #c01111;
+        color: #f9f9f9;
+    }
+    
+    .elementor-business__description {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    
+    .elementor-business__sub-title {
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 0;
+    }
+    
+    .elementor-business__item--red .small-cicrle::before {
+        content: '';
+        position: absolute;
+        width: 38px;
+        height: 38px;
+        background-color: rgba(255, 255, 255, .3);
+        border-radius: 50%;
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    
+    .elementor-business__item--normal .small-cicrle::before {
+        content: '';
+        position: absolute;
+        width: 38px;
+        height: 38px;
+        background-color: #f3f3f3;
+        border-radius: 50%;
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    
+    .elementor-business__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: 24px;
+    }
+    
+    .elementor-business-btn--bg-black,
+    .elementor-business-btn--bg-white {
+        background-color: white;
+        border-radius: 8px;
+        display: flex;
+        font-size: 18px;
+        font-weight: 700;
+        justify-content: center;
+        line-height: 80px;
+        padding: 0px 20px;
+        text-decoration: none;
+        width: auto;
+        align-items: center;
+        margin-top: auto;
+    }
+    
+    .elementor-business-btn--bg-black {
+        background-color: #54595f;
+        color: white;
+    }
+    
+    .elementor-business-btn--bg-white {
+        background-color: white;
+        color: #c01111;
+    }
+    
+    .elementor-business-btn--bg-white:hover {
+        background-color: #2b3441;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .elementor-business-btn--bg-black:hover {
+        background-color: #c01111;
+        text-decoration: none;
+        color: white;
+    }
+    
+    /* Section dự án */
+    .elementor-project {
+        position: relative;
+        margin-top: 50px;
+    }
+    
+    .elementor-project > .small-cicrle::before {
+        content: '';
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background-color: #c01111;
+        position: absolute;
+        right: 55%;
+        top: -30px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    
+    .elementor-project .elementor-heading {
+        margin-bottom: 80px;
+    }
+    
+    .elementor-project-contain {
+        display: flex;
+        gap: 20px;
+        padding: 0px;
+    }
+    
+    .project-counter {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        position: relative;
+        margin-top: 70px;
+    }
+    
+    .elementor-project-container .col-md-5 {
+        position: relative;
+    }
+    
+    .elementor-project .elementor-heading::after {
+        content: '';
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-color: rgba(192, 17, 17, .1);
+        position: absolute;
+        left: 0;
+        bottom: -40px;
+    }
+    
+    .project-counter ul {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0px;
+    }
+    
+    .project-counter ul li {
+        align-items: center;
+        display: flex;
+        justify-content: start;
+    }
+    
+    .project-counter__number {
+        align-items: start;
+        color: #c01111;
+        display: flex;
+        font-size: 92px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        position: relative;
+        gap: 20px;
+    }
+    
+    .project-counter__label {
+        color: #c01111;
+        font-size: 38px;
+        font-weight: 700;
+        padding-left: 10px;
+        top: -5px;
+    }
+    
+    .project-counter__title {
+        font-size: 24px;
+        white-space: nowrap;
+        color: #2b3441;
+        position: absolute;
+        bottom: 20px;
+    }
+    
+    .project-counter-btn {
+        background-color: #54595f;
+        border-radius: 4px;
+        color: white;
+        display: inline-flex;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 80px;
+        max-width: 100%;
+        order: 10;
+        padding: 0px 95px;
+        text-decoration: none;
+        align-items: center;
+        bottom: -70px;
+        position: absolute;
+    }
+    
+    .project-counter-btn__icon {
+        background-color: rgba(255, 255, 255, .1);
+        border-radius: 50%;
+        height: 24px;
+        line-height: 22px;
+        margin-left: 10px;
+        text-align: center;
+        width: 24px;
+    }
+    
+    .project-counter-btn:hover {
+        background-color: #c01111;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .project-counter-btn:hover .project-counter-btn__icon {
+        background-color: #e77373;
+    }
+    
+    .card.project-card .carousel-item img {
+        position: relative;
+        opacity: 0.1;
+    }
+    
+    .project-company-title,
+    .project-title a,
+    .project-description{
+        color: #000000;
+    }
+    
+    .carousel-inner {
+        display: flex;
+        justify-content: start;
+    }
+    
+    .carousel-caption {
+        text-align: left;
+        left: 10%;
+        right: 10%;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: start;
+        gap: 10px;
+        padding-bottom: 0;
+    }
+    
+    .project-company-title {
+        font-size: 13px;
+    }
+    
+    .project-title a {
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: bold;
+    }
+    
+    .project-title a:hover {
+        text-decoration: none;
+        color: #c01111;
+    }
+    
+    .project-btn {
+        background-color: transparent;
+        border: none;
+        color: #c01111;
+        display: flex;
+        justify-content: start;
+        padding: 0;
+        position: relative;
+        z-index: 1;
+        font-weight: 700;
+        font-size: 14px;
+        align-items: center;
+    }
+    
+    .project-card-btn__icon {
+        margin-left: 12px;
+        background-color: rgba(192, 17, 17, .1);
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: inline-block;
+        line-height: 24px;
+        text-align: center;
+    }
+    
+    .project-btn:hover {
+        background-color: transparent;
+        border: none;
+        color: #c01111;
+        display: flex;
+        justify-content: start;
+        padding: 0;
+        position: relative;
+        z-index: 1;
+        font-weight: 700;
+        font-size: 14px;
+        align-items: center;
+    }
+    
+    #projectCarousel.carousel.slide {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .carousel-control-button{
+        position: relative;
+        bottom: -30px;
+        right: -200px;
+        display: flex;
+        gap: 30px;
+        max-width: 100px;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: flex !important;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(148, 155, 164, .3);
+        border: none;
+        align-items: center;
+        opacity: 1;
+    }
+    
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+        background-color: #c01111;
+    }
+    
+    /* Section cơ hội nghề nghiệp */
+    .elementor-career {
+        background-color: rgba(192, 17, 17, .95);
+        border-radius: 16px;
+        height: 100%;
+        margin-top: 200px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    
+    .elementor-career::before {
+        background-image: url('../img/career-bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 16px;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        opacity: .1;
+    }
+    
+    .elementor-career-content {
+        align-items: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .elementor-career-content::after {
+        content: '';
+        position: absolute;
+        background-color: #ef3f45;
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        top: 75px;
+        left: 75px;
+        z-index: 0;
+    }
+    
+    .elementor-career-content-button {
+        margin-top: 20px;
+    }
+    
+    .elementor-career-content-button-title {
+        background-color: white;
+        border-radius: 8px;
+        color: #c01111;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 700;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        text-decoration: none;
+        width: 406px;
+    }
+    
+    .elementor-career-content-button-title:hover,
+    .elementor-career-content-button-title:hover .elementor-career-content-button-title__icon {
+        background-color: #2b3441;
+        color: #f9f9f9;
+        text-decoration: none;
+    }
+    
+    .elementor-career-content-button-title:hover .elementor-career-content-button-title__icon {
+        background-color: #949ba4;
+    }
+    
+    .elementor-career-content-button-title__icon {
+        background-color: rgba(192, 17, 17, .1);
+        border-radius: 50%;
+        display: inline-block;
+        font-size: 12px;
+        height: 24px;
+        line-height: 22px;
+        margin-left: 12px;
+        text-align: center;
+        width: 24px;
+    }
+    
+    .elementor-career-content__description {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    
+    .elementor-career-content__sub-description {
+        font-size: 24px;
+        padding: 0 5%;
+        text-align: center;
+    }
+    
+    .elementor-career-content__sub-title {
+        font-size: 18px;
+        font-weight: 300;
+        padding-top: 60px;
+        z-index: 0;
+    }
+    
+    .elementor-career-content__sub-title::before {
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #d82329;
+        top: 46px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    
+    .elementor-career-content__title {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-bottom: 80px;
+        z-index: 1;
+    }
+    
+    /* Section môi trường làm việc */
+    .elementor-environmental {
+        margin-top: 100px;
+    }
+    
+    .elementor-environmental-banner {
+        text-align: center;
+        position: relative;
+    }
+    
+    .elementor-environmental-banner__img {
+        border-radius: 8px;
+        max-width: 100%;
+        position: relative;
+    }
+    
+    .elementor-environmental-button-title {
+        background-color: #2b3441;
+        border-radius: 8px;
+        color: white;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+        height: 64px;
+        line-height: 64px;
+        padding: 0px 150px;
+        text-decoration: none;
+        position: absolute;
+        left: 2px;
+        right: 48px;
+        bottom: 100px;
+        z-index: 1;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+    
+    .elementor-environmental-button-title:hover {
+        background-color: #c01111;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .elementor-environmental-button-title__icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 12px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, .1);
+        line-height: 24px;
+        text-align: center;
+        position: relative;
+        top: -2px;
+        z-index: 2;
+    }
+    
+    .elementor-environmental-content ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style-type: none;
+        margin: 0;
+        margin-top: 50px;
+        padding: 0;
+    }
+    
+    .elementor-environmental-content__icon {
+        border: 6px solid #f9f9f9;
+        border-radius: 50%;
+        height: 40px;
+        margin-right: 27px;
+        width: 40px;
+    }
+    
+    .elementor-environmental-content__title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .elementor-environmental .elementor-heading {
+        margin-bottom: 0px;
+    }
+    
+    .elementor-icon-check {
+        background-color: #c01111;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        height: 40px;
+        mask-image: url(../img/icon-check.svg);
+        position: relative;
+        top: -3px;
+        width: 50px;
+    }
+    
+    /* Section văn hóa sự kiện */
+    .elementor-news {
+        margin-top: 100px;
+        position: relative;
+    }
+    
+    .elementor-news::before {
+        content: '';
+        width: 71px;
+        height: 71px;
+        border-radius: 50%;
+        background-color: #ffeff0;
+        position: absolute;
+        left: -90px;
+        top: 40%;
+    }
+    
+    .elementor-news-heading {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .elementor-heading {
+        position: relative;
+    }
+    
+    .elementor-news .elementor-heading::before {
+        content: '';
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background-color: #c01111;
+        position: absolute;
+        right: 5%;
+        top: -45px;
+    }
+    
+    .elementor-news-btn-next,
+    .elementor-news-btn-prev {
+        align-items: center;
+        background-color: rgba(148, 155, 164, .1);
+        border-radius: 50%;
+        color: #949ba4;
+        cursor: pointer;
+        display: flex;
+        font-size: 35px;
+        height: 40px;
+        justify-content: center;
+        line-height: 1.15;
+        text-align: center;
+        width: 40px;
+    }
+    
+    .elementor-news-heading__slick-btn {
+        align-items: center;
+        display: flex;
+        gap: 30px;
+    }
+    
+    .carousel-inner {
+        overflow: hidden;
+    }
+    
+    .carousel-item {
+        flex: 0 0 auto;
+        transition: transform 0.6s ease-in-out;
+    }
+    
+    .carousel-item.active {
+        display: flex !important;
+    }
+    
+    .elementor-news-slick-track {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        margin: 0 -10px;
+        width: calc(100% + 20px);
+    }
+    
+    .elementor-news-slick-item {
+        background-color: #fff;
+        border-radius: 8px;
+        flex: 0 0 calc((100% - 40px) / 3);
+        overflow: hidden;
+        padding: 20px;
+        margin: 0 10px;
+        height: 460px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .elementor-news-slick-item:hover {
+        border: 1px solid #e4e4e4;
+        transition: all .3s;
+    }
+    
+    .elementor-news-slick-item img {
+        border-radius: 8px;
+        height: auto;
+        width: 100%;
+    }
+    
+    .elementor-news-title {
+        color: #333;
+        font-size: 14px;
+        font-weight: 700;
+        height: 75px;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    
+    .elementor-news-title:hover {
+        text-decoration: none;
+        color: #c01111;
+    }
+    
+    .elementor-news-preview {
+        color: #666;
+        font-size: 14px;
+        height: 75px;
+        overflow: hidden;
+    }
+    
+    .elementor-news-btn-text {
+        color: #c01111;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        position: absolute;
+        bottom: 20px;
+    }
+    
+    .elementor-news-btn-text:hover {
+        text-decoration: none;
+        color: #c01111;
+    }
+    
+    .elementor-news-btn-text__icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 12px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgba(192, 17, 17, .1);
+        line-height: 24px;
+        text-align: center;
+        position: relative;
+        top: -1px;
+    }
+    
+    .elementor-news-btn-next,
+    .elementor-news-btn-prev {
+        display: flex !important;
+    }
+    
+    .carousel-item.active {
+        display: flex !important;
+    }
+    
+    .elementor-news-button {
+        margin-top: 40px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .elementor-new-button-title {
+        background-color: #2b3441;
+        border-radius: 8px;
+        color: #fff;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 700;
+        height: 80px;
+        line-height: 80px;
+        padding: 0px 20px;
+        text-decoration: none;
+        width: 366px;
+    }
+    
+    .elementor-new-button-title:hover {
+        background-color: #c01111;
+        transition: all .3s;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .elementor-new-button__icon {
+        background-color: rgba(255, 255, 255, .1);
+        border-radius: 50%;
+        display: inline-block;
+        height: 24px;
+        line-height: 22px;
+        margin-left: 12px;
+        position: relative;
+        text-align: center;
+        top: -1px;
+        width: 24px;
+    }
+    
+    /* Footer */
+    .footer-1 {
+        display: flex;
+        padding: 0px 180px;
+        padding-top: 60px;
+        background-color: #f7f7f7 !important;
+    }
+    
+    .footer-1-column {
+        box-sizing: border-box;
+        flex: 1 1 25%;
+        padding: 10px;
+    }
+    
+    .footer-1-column a {
+        box-shadow: none;
+        color: #949ba4;
+        text-decoration: none;
+    }
+    
+    .footer-1-column ul {
+        list-style-type: none;
+        margin: 0;
+        margin-top: 20px;
+        padding: 0;
+    }
+    
+    .footer-1-column ul li {
+        margin-bottom: 15px;
+    }
+    
+    .footer__logo {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        height: auto;
+        max-height: 51px;
+        max-width: 100%;
+    }
+    
+    .footer-heading {
+        color: #4d5969;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        position: relative;
+        z-index: 0;
+    }
+    
+    .footer-heading::before {
+        content: '';
+        position: absolute;
+        width: 38px;
+        height: 38px;
+        background-color: #e4e4e4;
+        border-radius: 50%;
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    
+    .footer-2 {
+        border-bottom: 1px solid #e4e4e4;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 180px;
+        padding-top: 30px;
+        background-color: #f7f7f7 !important;
+    }
+    
+    .footer-2-column {
+        box-sizing: border-box;
+        flex: 1;
+        padding: 10px;
+    }
+    
+    .footer-2-column:nth-child(3) {
+        flex: 2;
+    }
+    
+    .footer-heading {
+        color: #4d5969;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    
+    .footer-2-column ul {
+        list-style-type: none;
+        margin: 0;
+        margin-top: 20px;
+        padding: 0;
+    }
+    
+    .footer-2-column ul li {
+        color: #949ba4;
+        margin-bottom: 15px;
+    }
+    
+    .footer-3 {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 180px;
+        padding-top: 20px;
+        background-color: #f7f7f7 !important;
+    }
+    
+    .footer-3-column {
+        display: flex;
+        flex: 1 1 50%;
+    }
+    
+    .footer-3-column-1 {
+        flex: 1;
+    }
+    
+    .footer-3-column-1 ul {
+        color: #949ba4;
+        list-style-type: none;
+    }
+    
+    .footer-3-column-1 ul li {
+        margin-bottom: 15px;
+    }
+    
+    .footer-3-column-2 {
+        flex: 1;
+    }
+    
+    .footer-3-logo {
+        flex: 0 0 auto;
+        width: auto;
+    }
+    
+    .bear-footer {
+        height: auto;
+        width: 100%;
+    }
+    
+    /* Button Join us */
+    .join-us-button {
+        background-color: #c01111;
+        border-radius: 50%;
+        bottom: 120px;
+        box-shadow: 0 0 0 8px white, 0 2px 4px rgba(0, 0, 0, 0.2);
+        color: #fff;
+        font-size: 13px;
+        font-weight: 700;
+        height: 60px;
+        line-height: 60px;
+        position: fixed;
+        right: 40px;
+        text-align: center;
+        text-decoration: none;
+        width: 60px;
+        z-index: 9999;
+    }
+    
+    .join-us-button:hover {
+        background-color: #a00;
+        transition: background-color 0.3s;
+        text-decoration: none;
+        color: white;
+    }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 767px){
+    .img-fluid {
+        top: 100px;
+    }
+
+    .elementor-business {
+        margin-top: 500px;
+    }
+
+    .elementor-project-container {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .elementor-project-container .col-md-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .carousel-control-button {
+        right: -500px;
+    }
+
+    .elementor-environmental-contain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .elementor-environmental-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .elementor-environmental-banner {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .elementor-environmental-button-title{
+        bottom: -180px;
+        left: -540px;
+        padding: 0 180px;
+    }
+
+    .footer-1 {
+        flex-direction: column;
+    }
+
+    .footer-2 {
+        flex-direction: column;
+    }
+
+    .join-us-button {
+        right: 300px;
+    }
+
+    .footer-3-column-1 {
+        flex: 2
+    }
+}
+
+
