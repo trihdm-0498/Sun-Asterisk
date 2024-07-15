@@ -17,13 +17,11 @@ body {
 
 /* Header */
 header {
-    align-items: center;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
     height: auto;
     overflow: hidden;
-    padding: 10px 180px 0px 180px !important;
+    padding: 10px 0 !important;
     position: sticky;
     top: 0;
     width: 100%;
@@ -39,6 +37,28 @@ header .bg-light {
 }
 
 /* Navbar */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 180px;
+}
+
+.navbar-brand {
+    flex: 1;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+}
+
+.collapse.navbar-collapse {
+    flex: 2;
+    justify-content: flex-end;
+}
+
 .menu-object {
     display: flex;
     list-style-type: none;
@@ -123,6 +143,12 @@ header .bg-light {
 }
 
 /* lang-switcher */
+.lang-switcher{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .lang-switcher ul {
     align-items: center;
     display: flex;
@@ -141,11 +167,20 @@ header .bg-light {
     color: #c01111;
 }
 
-.lang-switcher .lang-vi-default {
+.lang-switcher .lang-default {
     border: 1px solid #c01111;
     color: #c01111;
     font-weight: 600;
     padding: 1px 13px;
+}
+
+.lang-normal a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.lang-normal a:hover {
+    text-decoration: none;
 }
 
 .dropdown {
@@ -236,10 +271,16 @@ main {
     position: relative;
 }
 
+.elementor-intro {
+    width: 100% !important;
+}
+
 .elementor-intro-contain {
     display: flex;
     align-items: center;
     position: relative;
+    width: 100% !important;
+    box-sizing: border-box;
 }
 
 .elementor-intro__design {
@@ -461,13 +502,18 @@ main {
     display: flex;
     gap: 20px;
     padding: 0px;
-    position: relative;
 }
 
-.elementor-project-counter {
+.project-counter {
     display: flex;
     flex-direction: column;
     gap: 0px;
+    position: relative;
+    margin-top: 70px;
+}
+
+.elementor-project-container .col-md-5 {
+    position: relative;
 }
 
 .elementor-project .elementor-heading::after {
@@ -481,7 +527,7 @@ main {
     bottom: -40px;
 }
 
-.elementor-project-counter ul {
+.project-counter ul {
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -489,13 +535,13 @@ main {
     padding: 0px;
 }
 
-.elementor-project-counter ul li {
+.project-counter ul li {
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
 
-.elementor-project-counter__number {
+.project-counter__number {
     align-items: start;
     color: #c01111;
     display: flex;
@@ -507,7 +553,7 @@ main {
     gap: 20px;
 }
 
-.elementor-project-counter__number .elementor-project-counter__label {
+.project-counter__label {
     color: #c01111;
     font-size: 38px;
     font-weight: 700;
@@ -515,7 +561,7 @@ main {
     top: -5px;
 }
 
-.elementor-project-counter__title {
+.project-counter__title {
     font-size: 24px;
     white-space: nowrap;
     color: #2b3441;
@@ -523,106 +569,7 @@ main {
     bottom: 20px;
 }
 
-.elementor-project-slider {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-}
-
-.elementor-project-slider-item {
-    border-radius: 8px;
-    height: fit-content;
-    margin-bottom: 20px;
-    overflow: hidden;
-    position: relative;
-    width: 332px;
-    flex: 0 0 1;
-}
-
-.elementor-project-slider-item img {
-    display: block;
-    height: 90%;
-    opacity: 0.1;
-    width: 100%;
-}
-
-.elementor-project-slider-content {
-    border-radius: 8px;
-    color: black;
-    left: 50%;
-    padding: 20px 0px;
-    position: absolute;
-    top: 60%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-}
-
-.elementor-project-slider__description {
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.elementor-project-slider__sub-title {
-    font-size: 13px;
-    margin-bottom: 10px;
-}
-
-.elementor-project-slider__title {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.elementor-project-slider-btn-text {
-    color: #c01111;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    text-decoration: none;
-}
-
-.elementor-project-slider-btn-text:hover {
-    text-decoration: none;
-    color: #c01111;
-}
-
-.elementor-project-slider-btn-text__icon {
-    font-weight: 700;
-    margin-left: 5px;
-}
-
-.elementor-project-slider .carousel-inner {
-    display: flex;
-    justify-content: center;
-    padding-right: 100px;
-}
-
-.elementor-project-slider-button {
-    align-items: center;
-    display: flex;
-    gap: 30px;
-    justify-content: flex-end;
-    padding-right: 100px;
-    width: 100%;
-}
-
-.elementor-project-slider-btn__next,
-.elementor-project-slider-btn__prev {
-    background-color: rgba(148, 155, 164, .1);
-    border-radius: 50%;
-    color: #949ba4;
-    cursor: pointer;
-    font-size: 35px;
-    height: 40px;
-    line-height: 1.15;
-    text-align: center;
-    width: 40px;
-}
-
-.elementor-project-counter-btn {
+.project-counter-btn {
     background-color: #54595f;
     border-radius: 4px;
     color: white;
@@ -630,17 +577,16 @@ main {
     font-size: 18px;
     font-weight: 700;
     line-height: 80px;
-    margin: 80px 100px 0px 60px;
     max-width: 100%;
     order: 10;
     padding: 0px 95px;
     text-decoration: none;
     align-items: center;
-    bottom: 0;
+    bottom: -70px;
     position: absolute;
 }
 
-.elementor-project-counter-btn__icon {
+.project-counter-btn__icon {
     background-color: rgba(255, 255, 255, .1);
     border-radius: 50%;
     height: 24px;
@@ -650,14 +596,126 @@ main {
     width: 24px;
 }
 
-.elementor-project-counter-btn:hover {
+.project-counter-btn:hover {
     background-color: #c01111;
     text-decoration: none;
     color: white;
 }
 
-.elementor-project-counter-btn:hover .elementor-project-counter-btn__icon {
+.project-counter-btn:hover .project-counter-btn__icon {
     background-color: #e77373;
+}
+
+.card.project-card .carousel-item img {
+    position: relative;
+    opacity: 0.1;
+}
+
+.project-company-title,
+.project-title a,
+.project-description{
+    color: #000000;
+}
+
+.carousel-inner {
+    display: flex;
+    justify-content: start;
+}
+
+.carousel-caption {
+    text-align: left;
+    left: 10%;
+    right: 10%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    padding-bottom: 0;
+}
+
+.project-company-title {
+    font-size: 13px;
+}
+
+.project-title a {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.project-title a:hover {
+    text-decoration: none;
+    color: #c01111;
+}
+
+.project-btn {
+    background-color: transparent;
+    border: none;
+    color: #c01111;
+    display: flex;
+    justify-content: start;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 14px;
+    align-items: center;
+}
+
+.project-card-btn__icon {
+    margin-left: 12px;
+    background-color: rgba(192, 17, 17, .1);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 24px;
+    text-align: center;
+}
+
+.project-btn:hover {
+    background-color: transparent;
+    border: none;
+    color: #c01111;
+    display: flex;
+    justify-content: start;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 14px;
+    align-items: center;
+}
+
+#projectCarousel.carousel.slide {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-control-button{
+    position: relative;
+    bottom: -30px;
+    right: -200px;
+    display: flex;
+    gap: 30px;
+    max-width: 100px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: flex !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(148, 155, 164, .3);
+    border: none;
+    align-items: center;
+    opacity: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #c01111;
 }
 
 /* Section cơ hội nghề nghiệp */
@@ -665,7 +723,7 @@ main {
     background-color: rgba(192, 17, 17, .95);
     border-radius: 16px;
     height: 100%;
-    margin-top: 100px;
+    margin-top: 200px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -797,30 +855,36 @@ main {
 }
 
 .elementor-environmental-banner {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
+    position: relative;
 }
 
 .elementor-environmental-banner__img {
     border-radius: 8px;
     max-width: 100%;
+    position: relative;
 }
 
 .elementor-environmental-button-title {
     background-color: #2b3441;
-    border-radius: 4px;
+    border-radius: 8px;
     color: white;
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
-    height: 80px;
-    line-height: 80px;
-    margin-top: -120px;
-    padding: 0px 170px;
+    height: 64px;
+    line-height: 64px;
+    padding: 0px 150px;
     text-decoration: none;
+    position: absolute;
+    left: 2px;
+    right: 48px;
+    bottom: 100px;
+    z-index: 1;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .elementor-environmental-button-title:hover {
@@ -830,14 +894,17 @@ main {
 }
 
 .elementor-environmental-button-title__icon {
-    margin-left: 5px;
-}
-
-.elementor-environmental-contain {
-    align-items: start;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr;
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .1);
+    line-height: 24px;
+    text-align: center;
+    position: relative;
+    top: -2px;
+    z-index: 2;
 }
 
 .elementor-environmental-content ul {
@@ -850,15 +917,9 @@ main {
     padding: 0;
 }
 
-.elementor-environmental-content ul li {
-    align-items: flex-start;
-    display: flex;
-}
-
 .elementor-environmental-content__icon {
     border: 6px solid #f9f9f9;
     border-radius: 50%;
-    display: block;
     height: 40px;
     margin-right: 27px;
     width: 40px;
@@ -879,7 +940,6 @@ main {
     background-size: cover;
     display: inline-block;
     height: 40px;
-    left: -3px;
     mask-image: url(../img/icon-check.svg);
     position: relative;
     top: -3px;
@@ -1040,11 +1100,6 @@ main {
     top: -1px;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    display: none !important;
-}
-
 .elementor-news-btn-next,
 .elementor-news-btn-prev {
     display: flex !important;
@@ -1057,6 +1112,9 @@ main {
 .elementor-news-button {
     margin-top: 40px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .elementor-new-button-title {
