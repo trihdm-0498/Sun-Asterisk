@@ -169,6 +169,54 @@
     .join-us-button {
         right: 60px;
     }
+
+    .navbar-collapse {
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        top: 80px;
+        left: 0;
+    }
+
+    .menu-object .nav-item:first-child .nav-link::before {
+        display: none;
+    }
+
+    .menu-object li #nav-link-active {
+        background-color: #c01111;
+        content: '';
+        width: 100%;
+        height: 100%;
+        color: white !important;
+    }
+
+    .menu-object li {
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-object a {
+        padding-left: 10px !important;
+    }
+
+    .menu-object a:hover:before,
+    .menu-object a:focus:before {
+        display: none;
+    }
+
+    .menu-object a:hover,
+    .menu-object a:focus {
+        background-color: #c01111;
+        content: '';
+        width: 100%;
+        height: 100%;
+        color: white !important;
+    }
+
+    .menu-object {
+        padding-left: 0;
+        margin-right: 0;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
